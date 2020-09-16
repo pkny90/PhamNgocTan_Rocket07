@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class TypeQuestion {
 	
-	String typeName;	// Khai báo tên	
+	TypeName typeName;	// Khai báo tên	
 	int typeID	;		// Khai báo ID
 
 	
-	public TypeQuestion(String typeName, int typeID) {
+	public TypeQuestion(TypeName essay, int typeID) {
 		super();
-		this.typeName = typeName;
+		this.typeName = essay;
 		this.typeID = typeID;
 
 				

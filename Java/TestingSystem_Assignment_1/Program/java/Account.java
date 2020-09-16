@@ -8,8 +8,8 @@ public class Account {
 	String email;
 	String fullName;	// Khai báo tên	
 	int accountID;
-	int departmentID;
-	int positionID;		// Khai báo ID
+	Department department;
+	Position position;		// Khai báo ID
 	Date createDate;
 	Group[] groups;
 	
@@ -22,18 +22,14 @@ public class Account {
 		
 	}
 	
+	public Account( Group[] groupOfAccount1) {
+
+		System.out.println("Group là: " + groupOfAccount1);
+	}
+	
 	public Account( Date createDate) {
 
 		this.createDate = createDate;
 	}
-	
-	public void Department( int departmentID) {
 
-		this.departmentID = departmentID;
-	}
-	
-	public void positionID( int positionID) {
-
-		this.positionID = positionID;
-	}
 }
